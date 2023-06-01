@@ -1,0 +1,52 @@
+%% Template for MLP Coursework 4
+
+%% Based on  LaTeX template for ICML 2017 - example_paper.tex at 
+%%  https://2017.icml.cc/Conferences/2017/StyleAuthorInstructions
+
+\documentclass{article}
+\input{mlp2022_includes}
+
+%% You probably do not need to change anything above this comment
+
+%% REPLACE this with your project title, group ID and list of student numbers for the group
+%\def\projectTitle{Title}
+\def\groupNumber{G060}
+\def\studentNumbers{s2446690, s2305829, s2420055}
+
+\begin{document} 
+\twocolumn[
+\mlptitle{Enhancing Video Description Generation with Deep Learning and ChatGPT: A Comparative Study}
+
+\centerline{\groupNumber\ (\studentNumbers)}
+
+\vskip 7mm
+]
+
+\begin{abstract} 
+This study aims to tackle the challenging task of generating semantically meaningful video descriptions using deep learning techniques. Our baseline model uses a simple combination of an image feature extraction CNN and vanilla transformer. We compare its performance with 4 state-of-the-art end-to-end video captioning models, including PDVC, MART, DenseCap, and SwinBERT, on the ActivityNet dataset. The coherency and comprehensibility of the descriptions generated are enhanced utilising ChatGPT, a new GPT-3 based LLM. We evaluate our models using metrics such as METEOR, SARI, ROUGE, and Cross-Encoders on 26 videos. Among all the models tested, SwinBERT and DenseCap exhibited the best average similarity scores of $\approx$ 0.25.
+\end{abstract} 
+
+\section{Introduction}
+\label{sec:intro}
+\input{introduction}
+
+\section{Related work}
+\label{sec:relwork}
+\input{related-work}
+
+\section{Data set and task} 
+\input{dataset-and-task}
+
+\section{Methodology}
+\input{methodology}
+
+\section{Experiments}
+\input{experiments}
+
+\section{Conclusions}
+\label{sec:concl}
+\input{conclusion}
+
+\bibliography{example-refs}
+\end{document} 
+
